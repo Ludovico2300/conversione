@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Lezione HTML</title>
+    <title>Lezione Conversione e FallBack</title>
     <style>img{max-width:300px;}</style>
 </head>
 
 <body>
-<img src="assets/img1.webp" alt="Immagine 1"/>
-<img src="assets/img2.webp" alt="Immagine 2"/>
+        <picture>
+            <source srcset="assets/business-man.jpg"/>
+            <img src="assets/business-man.webp" alt="Immagine 1"/>
+        </picture>
+        <picture>
+            <source srcset="assets/ok-hand.jpg"/>
+            <img src="assets/ok-hand.webp" alt="Immagine 2"/>
+        </picture>
 </body>
 
 </html>
